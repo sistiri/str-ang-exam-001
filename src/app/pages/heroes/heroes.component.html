@@ -20,7 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let hero of heroList$">
+                    <tr *ngFor="let hero of heroList$ | filter:phrase:'name'">
                         <td>{{ hero.id }}</td>
                         <td>{{ hero.name }}</td>
                         <td>{{ hero.superpower }}</td>

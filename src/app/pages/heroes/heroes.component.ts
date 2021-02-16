@@ -12,8 +12,7 @@ export class HeroesComponent implements OnInit {
 
   heroList$ = this.heroService.getAll();
   phrase: string = ''
-  @Input() phraseString: string = '';
-  
+    
   constructor(
     private heroService: HeroService
   ) { }
